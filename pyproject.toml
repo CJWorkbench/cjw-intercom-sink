@@ -1,0 +1,48 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cjw-intercom-sink"
+version = "0.0.1"
+description = "Perform Intercom requests that were queued on RabbitMQ"
+authors = ["Adam Hooper <adam@adamhooper.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~=3.9.0"
+carehare = "~=0.0.10"
+msgpack = "~=1.0.2"
+httpx = "~=0.18.1"
+
+[tool.isort]
+# Black compatibility
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+skipsdist = True
+envlist = py39-{pyflakes,black,isort}
+
+[flake8]
+exclude = venv/*,tox/*,specs/*,build/*
+ignore = E123,E128,E266,E402,W503,E731,W601
+max-line-length = 88
+
+[testenv]
+deps =
+  pyflakes: pyflakes>=2.2
+  black: black
+  isort: isort
+commands =
+  pyflakes: pyflakes app
+  black: black --check app
+  isort: isort --check --diff app
+"""
