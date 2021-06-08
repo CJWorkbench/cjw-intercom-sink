@@ -12,7 +12,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "~=3.9.0"
-carehare = "~=0.0.10"
+carehare = "~=1.0"
 msgpack = "~=1.0.2"
 httpx = "~=0.18.1"
 

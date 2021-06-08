@@ -1,6 +1,6 @@
 [[package]]
 name = "carehare"
-version = "0.0.11"
+version = "1.0.0"
 description = "asyncio RabbitMQ client"
 category = "main"
 optional = false
@@ -111,12 +111,12 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "~=3.9.0"
-content-hash = "6dfed4db147d62d46b948a58d219608a856d893cdc8233455c397db60970a847"
+content-hash = "6c813cbde1f2c9fe31f491fc3026d78248c8376b8d9e8a470a815ed39c85bd84"
 
 [metadata.files]
 carehare = [
-    {file = "carehare-0.0.11-py3-none-any.whl", hash = "sha256:e17917badac040872eb0be52d90029923397044b5c1d37a004973224e86e6158"},
-    {file = "carehare-0.0.11.tar.gz", hash = "sha256:ebd710150576f4b2dbf11cd1b51c11fb79d6048cecf21b2dcbdefa9d30394192"},
+    {file = "carehare-1.0.0-py3-none-any.whl", hash = "sha256:b8f7ab224449ea7bfebd8067122eb8e1b60e859fb7d1d7ea5c7d638e0cf7b657"},
+    {file = "carehare-1.0.0.tar.gz", hash = "sha256:6d746bcd889ab6c5b032a8e9ec78ea63660b1790145b5246a811e789ca136c68"},
 ]
 certifi = [
     {file = "certifi-2021.5.30-py2.py3-none-any.whl", hash = "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"},
